@@ -28,3 +28,11 @@ To setup the environment, install conda and run (Must run on servers with multip
 ```bash
 conda create --name <your_env_name> --file requirements.txt
 ```
+To train the SSDA4Drug model and obtain predicted results in target domain, you need to download the datasets (Example: GDSC), place it in the datasets folder, and then run:
+
+```bash
+python SSDA.py
+```
+
+## Directory structure
+
