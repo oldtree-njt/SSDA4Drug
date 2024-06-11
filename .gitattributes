@@ -1,1 +1,11 @@
 data/experiment_data/*.zip filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/Afatinib/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/AR-42/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/Cetuximab/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/Etoposide/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/Gefitinib/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/NVP-TAE684/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/PLX4720/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/PLX4720_451Lu/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/Sorafenib/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/SCAD_data/Vorinostat/*.tsv filter=lfs diff=lfs merge=lfs -text
