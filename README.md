@@ -28,11 +28,31 @@ To setup the environment, install conda and run (Must run on servers with multip
 ```bash
 conda create --name <your_env_name> --file requirements.txt
 ```
-To train the SSDA4Drug model and obtain predicted results in target domain, you need to download the datasets (Example: GDSC), place it in the datasets folder, and then run:
 
+If you want to use SCAD data to train a model, please splite the dataset
 ```bash
-python SSDA.py
+SCAD_Drug.ipynb
+split_data.ipynb
+```
+then run
+```bash
+python SSDA.py -shot_method 3-shot -drug Gefitinib
+```
+
+if you want to train the model using other datasets, you need to download the datasets (Example: GDSC and GEO), place it in the datasets folder, and then run
+```bash
+python SSDA.py -shot_method 3-shot
 ```
 
 ## Directory structure
++ `SSDA.py/experiment_shot.py`: contains the code for the model, the dataset, the evaluation, and the training loop.
 
++ `trainer.py`: Contains the training loop, the hyperparameters, and the evaluation.
+
++ `utils.py`: Contains auxiliary, general-purpose, or custom functions, which can be called and used in other parts of the project.
+
++ `model.py`: Model storage directory.
+
++ `data`:
+  * SCAD_data：The directory stores the dataset of SCAD.
+  * experiment_data: The directory stores the dataset of experiment.
