@@ -33,6 +33,7 @@ If you want to use SCAD data to train a model, please splite the dataset
 ```bash
 SCAD_Drug.ipynb
 split_data.ipynb
+n_shot.ipynb
 ```
 then run
 ```bash
