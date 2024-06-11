@@ -54,5 +54,5 @@ python SSDA.py -shot_method 3-shot
 + `model.py`: Model storage directory.
 
 + `data`:
-  * SCAD_data：The directory stores the dataset of SCAD.
-  * experiment_data: The directory stores the dataset of experiment.
+  * `SCAD_data`：The directory stores the dataset of SCAD.
+  * `experiment_data`: The directory stores the dataset of experiment.
