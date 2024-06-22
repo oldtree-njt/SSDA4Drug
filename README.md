@@ -29,7 +29,7 @@ To setup the environment, install conda and run (Must run on servers with multip
 conda create --name <your_env_name> --file requirements.txt
 ```
 
-If you want to use SCAD data to train a model, please splite the dataset
+If you want to use benchmark data to train a model, please split the dataset
 ```bash
 SCAD_Drug.ipynb
 split_data.ipynb
