@@ -31,22 +31,22 @@ conda create --name <your_env_name> --file requirements.txt
 
 If you want to use benchmark data to train a model, please split the dataset
 ```bash
-SCAD_Drug.ipynb
+benchmark.ipynb
 split_data.ipynb
 n_shot.ipynb
 ```
 then run
 ```bash
-python SSDA.py -shot_method 3-shot -drug Gefitinib
+python main.py -shot_method 3-shot -drug Gefitinib
 ```
 
 if you want to train the model using other datasets, you need to download the datasets (Example: GDSC and GEO), place it in the datasets folder, and then run
 ```bash
-python SSDA.py -shot_method 3-shot
+python main.py -shot_method 3-shot
 ```
 
 ## Directory structure
-+ `SSDA.py/experiment_shot.py`: contains the code for the model, the dataset, the evaluation, and the training loop.
++ `main.py/experiment_shot.py`: contains the code for the model, the dataset, the evaluation, and the training loop.
 
 + `trainer.py`: Contains the training loop, the hyperparameters, and the evaluation.
 
@@ -55,5 +55,5 @@ python SSDA.py -shot_method 3-shot
 + `model.py`: Model storage directory.
 
 + `data`:
-  * `SCAD_data`：The directory stores the dataset of SCAD.
+  * `benchmark_data`：The directory stores the dataset of benchmark.
   * `experiment_data`: The directory stores the dataset of experiment.
