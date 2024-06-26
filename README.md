@@ -55,5 +55,5 @@ python main.py -shot_method 3-shot
 + `model.py`: Model storage directory.
 
 + `data`:
-  * `benchmark_data`：The directory stores the dataset of benchmark.
+  * 'SCAD_data`：The directory stores the dataset of benchmark.
   * `experiment_data`: The directory stores the dataset of experiment.
