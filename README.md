@@ -6,7 +6,7 @@
 
 ## Model architecture
 
-![](framework.png)
+![](framework.jpg)
 
 ## Requirements
 
