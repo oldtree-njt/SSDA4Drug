@@ -37,12 +37,12 @@ n_shot.ipynb
 ```
 then run
 ```bash
-python main.py -shot_method "3-shot" -drug "Gefitinib" -encoder_h_dims "512,256" -bottleneck 128 -predictor_h_dims "64,32" -epochs 50 -lr 0.001 --batch_size 32 -dropout 0.3
+python main.py --shot_method "3-shot" --drug "Gefitinib" --encoder_h_dims "512,256" --bottleneck 128 --predictor_h_dims "64,32" --epochs 50 --lr 0.001 --batch_size 32 --dropout 0.3
 ```
 
 if you want to train the model using other datasets, you need to download the datasets (Example: GDSC and GEO), place it in the datasets folder, and then run
 ```bash
-python main.py -shot_method 3-shot
+python main.py --shot_method "3-shot"
 ```
 
 ## Directory structure
